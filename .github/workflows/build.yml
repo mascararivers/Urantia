@@ -19,9 +19,6 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
 
-      - name: chown Gradle
-        run: chown +x ./gradlew
-
       - name: Execute Gradle build
         run: ./gradlew build
 
