@@ -16,6 +16,9 @@ jobs:
           distribution: temurin
           java-version: 17
 
+      - name: gradle ownership fix
+        run: chmod +x gradlew
+
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
 
