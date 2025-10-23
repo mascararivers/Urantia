@@ -82,11 +82,14 @@ dependencies {
     shadowImpl("org.spongepowered:mixin:0.7.11-SNAPSHOT") {
         isTransitive = false
     }
+    // http request stuff
+    shadowImpl("org.apache.httpcomponents.client5:httpclient5:5.3")
+    shadowImpl("org.apache.httpcomponents.core5:httpcore5:5.2.4")
+
     annotationProcessor("org.spongepowered:mixin:0.8.5-SNAPSHOT")
 
     // If you don't want to log in with your real minecraft account, remove this line
     runtimeOnly("me.djtheredstoner:DevAuth-forge-legacy:1.2.1")
-
 }
 
 // Tasks:
